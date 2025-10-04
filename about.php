@@ -1,0 +1,360 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>GRAIN | About</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="assets/images/grain-logo.png" type="image/png">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&amp;display=swap" rel="stylesheet">
+
+<style>
+    #sub-dropdown:hover{
+        color:#21e683;
+    }
+
+    /* Logo styling */
+    .logo-box .logo img,
+    .sticky-logo img,
+    .nav-logo img {
+        width: auto;
+        height: 70px;
+        max-width: 100%;
+        object-fit: contain;
+        transition: all 0.3s ease;
+    }
+
+    .sticky-header .sticky-logo img {
+        height: 50px;
+    }
+
+    .mobile-menu .nav-logo img {
+        height: 80px;
+        max-width: 200px;
+    }
+
+    @media (max-width: 768px) {
+        .logo-box .logo img {
+            height: 55px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .logo-box .logo img {
+            height: 45px;
+        }
+        .sticky-header .sticky-logo img {
+            height: 40px;
+        }
+        .mobile-menu .nav-logo img {
+            height: 60px;
+        }
+    }
+</style>
+</head>
+
+<!-- page wrapper -->
+<body>
+
+    <div class="boxed_wrapper">
+
+        <!-- main header -->
+        <header class="main-header header-style-two">
+
+            <!-- header-lower -->
+            <div class="header-lower">
+
+                <div class="auto-container">
+
+                    <div class="outer-box clearfix">
+
+                        <div class="logo-box pull-left">
+
+                            <figure class="logo"><a href="index.php"><img src="assets/images/grain-logo.png" alt="GRAIN Logo"></a></figure>
+
+                        </div>
+
+                        <div class="menu-area pull-right clearfix">
+
+                            <!--Mobile Navigation Toggler-->
+
+                            <div class="mobile-nav-toggler">
+
+                                <i class="icon-bar"></i>
+
+                                <i class="icon-bar"></i>
+
+                                <i class="icon-bar"></i>
+
+                            </div>
+
+                            <nav class="main-menu navbar-expand-md navbar-light" role="navigation">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="index.php">Home</a></li>
+                                        <li class="dropdown">
+                                            <a href="about.php">About GRAIN</a>
+                                            <ul>
+                                                <li><a href="about.php">About</a></li>
+                                                <li><a href="about.php#aim-objective">Mission & Vision</a></li>
+                                                <li><a href="team.php">Team Member</a></li>
+                                                <li class="current"><a href="contact-grain.php">Contact Us</a></li>
+                                                <li><a href="gallery.php">Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="btn-box">
+                                <a href="news.php" class="theme-btn btn-five">Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+
+            <div class="sticky-header">
+
+                <div class="auto-container">
+
+                    <div class="outer-box clearfix">
+
+                        <figure class="sticky-logo pull-left">
+
+                            <a href="index.php"><img src="assets/images/grain-logo.png" alt="GRAIN Logo"></a>
+
+                        </figure>
+
+                        <div class="menu-area pull-right clearfix">
+
+                            <nav class="main-menu clearfix" style="padding-right:80px;">
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+
+        <div class="mobile-menu">
+
+            <div class="menu-backdrop"></div>
+
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box" style="background:#2a9735;">
+
+                <div class="nav-logo"><a href="index.php"><img src="assets/images/grain-logo.png" alt="GRAIN Logo" title=""></a></div>
+
+                <div class="menu-outer">
+
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+
+                </div>
+
+                <div class="contact-info">
+
+                    <h4>Contact Info</h4>
+
+                    <ul>
+
+                        <li></li>
+
+                        <li><a href="tel:+234"></a></li>
+
+                        <li><a href="mailto:grain.research.tech@gmail.com"></a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="social-links">
+
+                    <ul class="clearfix">
+
+                        <li><a href="https://x.com/GRAIN_research" target="_blank" rel="noopener noreferrer"><span class="fab fa-twitter"></span></a></li>
+
+                        <li><a href="https://www.facebook.com/share/1A7sbsiW6S" target="_blank" rel="noopener noreferrer"><span class="fab fa-facebook-square"></span></a></li>
+
+                        <li><a href="https://www.instagram.com/g.r.a.i.n_research" target="_blank" rel="noopener noreferrer"><span class="fab fa-instagram"></span></a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+        <!-- End Mobile Menu -->
+
+        <!-- about-style-nine -->
+        <section class="about-style-nine">
+            <div class="auto-container">
+                <div class="row align-items-center clearfix">
+                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_20">
+                            <div class="content-box">
+                                <div class="sec-title style-two">
+                                    <h5>ABOUT</h5>
+                                    <h2> Group for Research and Innovation Networking (GRAIN)</h2>
+                                    <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+                                </div>
+                                <div class="text">
+                                   <p  style="text-align:justify ;">
+                                    <p  style="text-align:justify ;">
+                                        The Group for Research and Innovation Networking (GRAIN) is a dynamic, student led 
+                                        organization dedicated to bridging the gap between theoretical knowledge and practical 
+                                        application. GRAIN equips young people 
+                                        particularly students with hands on engineering, environmental, and technological skills 
+                                        that inspire innovation, problem solving, and community impact.
+
+                                      At GRAIN, we believe that meaningful change starts with empowered learners and collaborative action.
+                                       Through project based learning, technical training, and strategic partnerships, we create opportunities
+                                        for students to explore real-world challenges and develop sustainable, locally driven solutions.
+
+                                      From organizing technical bootcamps to leading innovation focused collaborations like the Electric Vehicle (EV) project with MOMAS,
+                                       GRAIN is nurturing a new generation of changemakers ready to lead inclusive and sustainable development.
+
+                                     Whether through environmental literacy, drone piloting, or green tech projects, our mission remains clear: to build a future where skilled communities drive innovation for the good of all.
+
+                                   </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="image-box">
+                            <figure class="image clearfix js-tilt"><img src="assets/images/resource/about-7.png" alt="" width="100%"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Aim-objective-style-three -->
+        <div id="aim-objective" style="margin-bottom: 70px;"></div>
+
+<section class="works-style-two about-page centred bg-color-1">
+    <div class="auto-container">
+        <div class="sec-title style-two">
+            <h5>Mission & Vision</h5>
+            <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+        </div>
+
+        <div class="row align-items-start clearfix">
+            <!-- Mission -->
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content-box">
+                    <div class="sec-title style-two">
+                        <h3>Mission</h3>
+                        <h5>
+                            Empower collaboration through practical training and 
+                            environmental literacy for the development of sustainable 
+                            mindsets and meaningful action.
+                        </h5>
+                        <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision -->
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content-box">
+                    <div class="sec-title style-two">
+                        <h3>Vision</h3>
+                        <h5>
+                            Building a future where skilled communities lead innovation 
+                            and technological development for inclusive growth.
+                        </h5>
+                        <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Aim-objective-style-three end -->
+        
+    <!--- main-footer -->
+       <!-- main-footer -->
+ <footer class="main-footer footer-style-two"></footer>
+    <div class="footer-bottom">
+        <!-- scroll to top -->
+        <button class="scroll-top style-one scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <div class="auto-container">
+            <div class="bottom-inner clearfix">
+                <div class="copyright pull-left">
+                    <p>Copyright &copy; <a href="index.php">GRAIN</a>, All Rights Reserved.</p>
+                </div>
+                <ul class="footer-nav pull-right clearfix">
+                    <li><a href="index.php">Privacy Policy</a></li>
+                    <li><a href="index.php">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- main-footer end -->    <!-- main-footer end -->
+
+    </div>
+
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/tilt.jquery.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/bxslider.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+
+</html>

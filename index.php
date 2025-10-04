@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="GRAIN - Group for Research and Innovation Networking. A student-led organization dedicated to bridging theoretical knowledge and practical application through hands-on engineering and technological skills development.">
+    <meta name="keywords" content="GRAIN, research, innovation, networking, engineering, technology, Summit University, Nigeria, student organization">
+    <meta name="author" content="GRAIN">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="GRAIN | Home">
+    <meta property="og:description" content="Group for Research and Innovation Networking - Empowering students with practical engineering and technological skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="assets/images/grain-logo.png">
+
+    <title>GRAIN | Home</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/images/grain-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/grain-logo.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Stylesheets -->
+    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/color.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <style>
+        /* Logo styling */
+        .logo-box .logo img,
+        .sticky-logo img,
+        .nav-logo img {
+            width: auto;
+            height: 70px;
+            max-width: 100%;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .sticky-header .sticky-logo img {
+            height: 50px;
+        }
+
+        .mobile-menu .nav-logo img {
+            height: 80px;
+            max-width: 200px;
+        }
+
+        #sub-dropdown:hover {
+            color: #14d35a;
+        }
+        
+        /* Enhanced mobile responsiveness */
+        @media (max-width: 768px) {
+            .logo-box .logo img {
+                height: 55px;
+            }
+            
+            .banner-style-two {
+                padding: 80px 0;
+            }
+            
+            .about-style-two .content-box {
+                margin-bottom: 30px;
+            }
+            
+            .achievements-list {
+                padding-left: 20px;
+            }
+            
+            .achievements-list li {
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+            
+            .summit-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .summit-info img {
+                width: 80px;
+                margin-bottom: 15px;
+            }
+            
+            .gallery-section .row {
+                margin: 0 -10px;
+            }
+            
+            .gallery-section .col-lg-4,
+            .gallery-section .col-md-6 {
+                padding: 0 10px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-box .logo img {
+                height: 45px;
+            }
+
+            .sticky-header .sticky-logo img {
+                height: 40px;
+            }
+
+            .mobile-menu .nav-logo img {
+                height: 60px;
+            }
+
+            .sec-title h2 {
+                font-size: 24px;
+            }
+            
+            .sec-title h5 {
+                font-size: 16px;
+            }
+            
+            iframe {
+                height: 200px !important;
+            }
+        }
+        
+        /* Improved loading performance */
+        .image-box img {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-block:hover .image-box img {
+            transform: scale(1.05);
+        }
+        
+        /* Better button styling */
+        .theme-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .theme-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxed_wrapper">
+        <!-- main header -->
+        <header class="main-header header-style-two">
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-box clearfix">
+                        <div class="logo-box pull-left">
+                            <figure class="logo">
+                                <a href="index.php" aria-label="GRAIN Home">
+                                    <img src="assets/images/grain-logo.png" alt="GRAIN Logo" loading="lazy">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="menu-area pull-right clearfix">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+
+                            <nav class="main-menu navbar-expand-md navbar-light" role="navigation">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="current"><a href="index.php">Home</a></li>
+                                        <li class="dropdown">
+                                            <a href="about.php">About GRAIN</a>
+                                            <ul>
+                                                <li><a href="about.php">About</a></li>
+                                                <li><a href="about.php#aim-objective">Mission & Vision</a></li>
+                                                <li><a href="team.php">Team Member</a></li>
+                                                <li><a href="contact-grain.php">Contact Us</a></li>
+                                                <li><a href="gallery.php">Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="btn-box">
+                                <a href="news.php" class="theme-btn btn-five">Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box clearfix">
+                        <figure class="sticky-logo pull-left">
+                            <a href="index.php" aria-label="GRAIN Home">
+                                <img src="assets/images/grain-logo.png" alt="GRAIN Logo" loading="lazy">
+                            </a>
+                        </figure>
+                        <div class="menu-area pull-right clearfix">
+                            <nav class="main-menu clearfix" style="padding-right:80px;"></nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box" style="background:#2a9735;">
+                <div class="nav-logo">
+                    <a href="index.php">
+                        <img src="assets/images/grain-logo.png" alt="GRAIN Logo" title="GRAIN" loading="lazy">
+                    </a>
+                </div>
+                <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+
+                <div class="social-links">
+                    <ul class="clearfix" style="display: flex; list-style: none; padding: 0; margin: 0; gap: 15px;">
+                        <li>
+                            <a href="https://twitter.com/GRAIN_research" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                                <span class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/1A7sbsiW6S" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                                <span class="fab fa-facebook-square" style="font-size: 24px; color: #1877F2;"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/g.r.a.i.n_research" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                                <span class="fab fa-instagram" style="font-size: 24px; color: #E1306C;"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
+                                <span class="fab fa-youtube" style="font-size: 24px; color: #FF0000;"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Menu -->
+
+        <!-- banner-section -->
+        <section class="banner-style-two">
+            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-12.png);"></div>
+            <div class="anim-icon">
+                <div class="icon icon-1 rotate-me" style="background-image: url(assets/images/shape/anim-icon-6.png);"></div>
+                <div class="icon icon-2 rotate-me" style="background-image: url(assets/images/shape/anim-icon-7.png);"></div>
+                <div class="icon icon-3 rotate-me" style="background-image: url(assets/images/shape/anim-icon-8.png);"></div>
+                <div class="icon icon-4 rotate-me" style="background-image: url(assets/images/shape/anim-icon-7.png);"></div>
+                <div class="icon icon-5 rotate-me" style="background-image: url(assets/images/shape/anim-icon-7.png);"></div>
+                <div class="icon icon-6 rotate-me" style="background-image: url(assets/images/shape/anim-icon-9.png);"></div>
+                <div class="icon icon-7 rotate-me" style="background-image: url(assets/images/shape/anim-icon-9.png);"></div>
+                <div class="icon icon-8 rotate-me" style="background-image: url(assets/images/shape/anim-icon-10.png);"></div>
+                <div class="icon icon-9 rotate-me" style="background-image: url(assets/images/shape/anim-icon-11.png);"></div>
+                <div class="icon icon-10 rotate-me" style="background-image: url(assets/images/shape/anim-icon-12.png);"></div>
+            </div>
+        </section>
+        <!-- banner-section end -->
+
+        <!-- about-style-two -->
+        <section class="about-style-two">
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <!-- Content Column -->
+                    <div class="col-lg-6 col-md-12 content-column">
+                        <div class="content_block_4">
+                            <div class="content-box">
+                                <div class="sec-title style-two">
+                                    <h4>Our Achievements</h4>
+                                    
+                                    <div class="summit-info d-flex align-items-start gap-3">
+                                        <img src="assets/images/grain-logo.png" alt="GRAIN Logo" width="100" height="100" loading="lazy">
+                                        <h6 style="text-transform: none;">
+                                            The Group for Research and Innovation Networking (GRAIN)
+                                            is a student-led initiative committed to equipping peers with 
+                                            practical engineering and technological innovation skills through 
+                                            hands-on learning and creative exploration.
+                                        </h6>
+                                    </div>
+
+                                    <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+                                    <h5>Here's a glimpse of what we've accomplished so far at GRAIN.</h5>
+                                </div>
+
+                                <!-- Achievements List -->
+                                <div class="text">
+                                    <div class="text" style="color: #000; opacity: 1; font-weight: 500;">
+                                        <ul class="achievements-list">
+                                            <li>
+                                                <strong>Five-Day Technical Training:</strong> Successfully organized a five-day technical training under the DELite Project to promote experiential learning.
+                                            </li>
+                                            <li>
+                                                <strong>Electric Vehicle (EV):</strong> Secured a collaboration with MOMAS on an Electric Vehicle project.
+                                            </li>
+                                            <li>
+                                                <strong>Cashew Course Completed:</strong> Completed a specialized training on the ATINGI platform to enhance agribusiness knowledge.
+                                            </li>
+                                            <li>
+                                                <strong>Partnerships Secured:</strong> Collaborated with NAAEE, Summit University, and DELitE to further strengthen our mission and expand outreach.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Column -->
+                    <div class="col-lg-6 col-md-12 image-column">
+                        <div class="image_block_2 text-center">
+                            <iframe 
+                                width="100%" 
+                                height="315"
+                                src="https://www.youtube.com/embed/24_2WCi-t3Y" 
+                                title="GRAIN Introduction Video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-style-two end -->
+
+        <!--gallery -->
+        <section class="gallery-section" style="margin-bottom: 20px;">
+            <div class="auto-container">
+                <div class="sec-title style-two centred">
+                    <h5>GALLERY</h5>
+                    <h2>Our Gallery</h2>
+                    <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+                </div>
+
+                <div class="clearfix row">
+                    <div class="mb-4 col-lg-4 col-md-6 col-sm-12 gallery-block">
+                        <div class="gallery-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <a href="assets/images/gallery/gallery/P.jpg" class="lightbox-image gallery-me" data-fancybox="gallery">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="assets/images/gallery/gallery/P.jpg" alt="GRAIN Gallery Image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 col-lg-4 col-md-6 col-sm-12 gallery-block">
+                        <div class="gallery-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <a href="assets/images/gallery/gallery/P 3.jpg" class="lightbox-image gallery-me" data-fancybox="gallery">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="assets/images/gallery/gallery/P 3.jpg" alt="GRAIN Gallery Image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 col-lg-4 col-md-6 col-sm-12 gallery-block">
+                        <div class="gallery-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <a href="assets/images/gallery/gallery/P 2.jpg" class="lightbox-image gallery-me" data-fancybox="gallery">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="assets/images/gallery/gallery/P 2.jpg" alt="GRAIN Gallery Image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 col-lg-4 col-md-6 col-sm-12 gallery-block">
+                        <div class="gallery-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <a href="assets/images/gallery/gallery/P 5.jpg" class="lightbox-image gallery-me" data-fancybox="gallery">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="assets/images/gallery/gallery/P 5.jpg" alt="GRAIN Gallery Image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 col-lg-4 col-md-6 col-sm-12 gallery-block">
+                        <div class="gallery-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <a href="assets/images/gallery/gallery/P 6.jpg" class="lightbox-image gallery-me" data-fancybox="gallery">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="assets/images/gallery/gallery/P 6.jpg" alt="GRAIN Gallery Image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 col-lg-4 col-md-6 col-sm-12 gallery-block">
+                        <div class="gallery-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <a href="assets/images/gallery/gallery/P 7.jpg" class="lightbox-image gallery-me" data-fancybox="gallery">
+                                <div class="inner-box">
+                                    <figure class="image-box">
+                                        <img src="assets/images/gallery/gallery/P 7.jpg" alt="GRAIN Gallery Image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center see-more">
+                    <a href="gallery.php" class="theme-btn btn-five">See More</a>
+                </div>
+            </div>
+        </section>
+        <!-- gallery end -->
+
+        <!-- main-footer -->
+        <footer class="main-footer footer-style-two"></footer>
+        <div class="footer-bottom">
+            <!-- scroll to top -->
+            <button class="scroll-top style-one scroll-to-target" data-target="html" aria-label="Scroll to top">
+                <i class="fas fa-angle-up"></i>
+            </button>
+            <div class="auto-container">
+                <div class="bottom-inner clearfix">
+                    <div class="copyright pull-left">
+                        <p>Copyright &copy; <a href="index.php">GRAIN</a>, All Rights Reserved.</p>
+                    </div>
+                    <ul class="footer-nav pull-right clearfix">
+                        <li><a href="index.php">Privacy Policy</a></li>
+                        <li><a href="index.php">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- main-footer end -->
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/tilt.jquery.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/bxslider.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Modal Script -->
+    <script>
+        function showModal() {
+            if (document.getElementById('paymentModal')) {
+                var myModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+                myModal.show();
+            }
+        }
+
+        // Call the function when the page loads if modal exists
+        window.addEventListener('load', function() {
+            showModal();
+        });
+    </script>
+</body>
+</html>
