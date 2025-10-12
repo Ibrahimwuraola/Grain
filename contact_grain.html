@@ -1,410 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    <title>GRAIN | Contact GRAIN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAIN | Contact Us</title>
+    <meta name="description" content="Get in touch with GRAIN - Group for Research and Innovation Networking. Visit us at Summit University, Offa, Kwara State">
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Contact GRAIN - Get in touch with the Group for Research and Innovation Networking. Located at Summit University, Offa, Kwara State, Nigeria.">
-    <meta name="keywords" content="GRAIN contact, research organization contact, Summit University, Offa Kwara State, innovation networking">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Contact GRAIN | Group for Research and Innovation Networking">
-    <meta property="og:description" content="Get in touch with GRAIN. Email us at grain.research.tech@gmail.com or visit us at Summit University, Offa.">
-    <meta property="og:type" content="website">
-
-    <!-- Fav Icon -->
     <link rel="icon" href="assets/images/GRAIN-logo.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/images/GRAIN-logo.png">
-
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- Stylesheets -->
-    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/owl.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/color.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    
     <style>
-        #sub-dropdown:hover {
-            color: #0fac49;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        /* Logo styling */
-        .logo-box .logo img,
-        .sticky-logo img,
-        .nav-logo img {
-            width: auto;
-            height: 70px;
-            max-width: 100%;
-            object-fit: contain;
+        :root {
+            --primary: #2a9735;
+            --primary-dark: #1f7028;
+            --secondary: #14d35a;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #2a9735 0%, #14d35a 100%);
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            overflow-x: hidden;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
             transition: all 0.3s ease;
         }
 
-        .sticky-header .sticky-logo img {
-            height: 50px;
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 30px rgba(0,0,0,0.15);
         }
 
-        .mobile-menu .nav-logo img {
-            height: 80px;
-            max-width: 200px;
-        }
-        
-        /* Enhanced mobile responsiveness */
-        @media (max-width: 768px) {
-            .logo-box .logo img {
-                height: 55px;
-            }
-
-            .about-style-nine {
-                padding: 60px 0;
-            }
-            
-            .content-box {
-                text-align: center;
-                padding: 20px;
-            }
-            
-            .sec-title h2 {
-                font-size: 24px;
-                line-height: 1.3;
-            }
-            
-            .social-links {
-                justify-content: center !important;
-            }
-            
-            .text h5 {
-                font-size: 18px;
-                margin-bottom: 10px;
-                color: #2a9735;
-                font-weight: 600;
-            }
-            
-            .text p {
-                margin-bottom: 15px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .logo-box .logo img {
-                height: 45px;
-            }
-
-            .sticky-header .sticky-logo img {
-                height: 40px;
-            }
-
-            .mobile-menu .nav-logo img {
-                height: 60px;
-            }
-
-            .sec-title h2 {
-                font-size: 20px;
-            }
-            
-            .content-box {
-                padding: 15px;
-            }
-            
-            .social-links a {
-                margin: 10px !important;
-                padding: 15px;
-                border-radius: 50%;
-                background: rgba(42, 151, 53, 0.1);
-                transition: all 0.3s ease;
-            }
-            
-            .social-links a:hover {
-                background: rgba(42, 151, 53, 0.2);
-                transform: translateY(-2px);
-            }
-        }
-        
-        /* Improved contact section styling */
-        .contact-info-item {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-left: 4px solid #2a9735;
-            background: #f9f9f9;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        
-        .contact-info-item:hover {
-            background: #f0f8f2;
-            transform: translateX(5px);
-        }
-        
-        .contact-info-item h5 {
-            color: #2a9735;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .contact-info-item p {
-            margin-bottom: 0;
-            color: #333;
-        }
-        
-        .contact-info-item a {
-            color: #2a9735;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .contact-info-item a:hover {
-            color: #1e7a3a;
-            text-decoration: underline;
-        }
-        
-        /* Social links enhancement */
-        .social-links {
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo-img {
             width: 50px;
             height: 50px;
-            margin: 5px;
-            border-radius: 50%;
-            transition: all 0.3s ease;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
             text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
         }
-        
-        .social-links a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        /* Accessibility improvements */
-        hr {
-            border: none;
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #2a9735, transparent);
-            margin: 25px 0;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(42, 151, 53, 0.3);
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Page Header */
+        .page-header {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%),
+                        url('assets/images/banner/tech-background.jpg') center/cover no-repeat;
+            background-attachment: fixed;
+            padding: 150px 2rem 50px;
+            position: relative;
+        }
+
+        .page-header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-header p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .info-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateX(10px);
+        }
+
+        .info-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .info-card p {
+            margin: 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .info-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .info-card a:hover {
+            color: var(--primary-dark);
+        }
+
+        .social-links-contact {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links-contact a {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links-contact a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(42, 151, 53, 0.3);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: var(--light);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            font-size: 2rem;
+            color: var(--dark);
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Jost', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(42, 151, 53, 0.4);
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 6rem 2rem;
+            background: var(--light);
+        }
+
+        .map-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .map-container h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 3rem;
+        }
+
+        .map-wrapper {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            height: 450px;
+            background: #ddd;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .footer-section a {
+            display: block;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 70%;
+                background: white;
+                flex-direction: column;
+                padding: 5rem 2rem;
+                box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+                transition: right 0.3s ease;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info h2,
+            .map-container h2 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
-
 <body>
-    <div class="boxed_wrapper">
-        <!-- main header -->
-        <header class="main-header header-style-two">
-            <!-- header-lower -->
-            <div class="header-lower">
-                <div class="auto-container">
-                    <div class="outer-box clearfix">
-                        <div class="logo-box pull-left">
-                            <figure class="logo">
-                                <a href="index.html" aria-label="GRAIN Home">
-                                    <img src="assets/images/GRAIN-logo.png" alt="GRAIN Logo" loading="lazy">
-                                </a>
-                            </figure>
-                        </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/GRAIN-logo.png" alt="GRAIN Logo" class="logo-img">
+                <!--<span>GRAIN</span>-->
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html" class="cta-btn">Events</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-                        <div class="menu-area pull-right clearfix">
-                            <!--Mobile Navigation Toggler-->
-                            <div class="mobile-nav-toggler">
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                            </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with GRAIN - We'd love to hear from you</p>
+        </div>
+    </section>
 
-                            <nav class="main-menu navbar-expand-md navbar-light" role="navigation">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li class="dropdown">
-                                            <a href="about.html">About GRAIN</a>
-                                            <ul>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="about.html#aim-objective">Mission & Vision</a></li>
-                                                <li><a href="team.html">Team Member</a></li>
-                                                <li class="current"><a href="contact_grain.html">Contact Us</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Have questions about our programs? Want to collaborate with us? Reach out and let's start a conversation about innovation and community development.</p>
 
-                            <div class="btn-box">
-                                <a href="news.html" class="theme-btn btn-five">Events</a>
-                            </div>
-                        </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <!--<div class="info-icon">📍</div>-->
+                        <h3>Visit Us</h3>
+                    </div>
+                    <p>Summit University<br>Irra Road, Offa<br>Kwara State, Nigeria</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <div class="info-icon">📧</div>
+                        <h3>Email Us</h3>
+                    </div>
+                    <p><a href="mailto:grain.research.tech@gmail.com">grain.research.tech@gmail.com</a></p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <!--<div class="info-icon">🌐</div>-->
+                        <h3>Follow Us</h3>
+                    </div>
+                    <div class="social-links-contact">
+                        <a href="https://twitter.com/GRAIN_research" target="_blank" title="Twitter">𝕏</a>
+                        <a href="https://www.facebook.com/share/1A7sbsiW6S" target="_blank" title="Facebook">f</a>
+                        <a href="https://www.instagram.com/g.r.a.i.n_research" target="_blank" title="Instagram">📷</a>
                     </div>
                 </div>
             </div>
 
-            <!--sticky Header-->
-            <div class="sticky-header">
-                <div class="auto-container">
-                    <div class="outer-box clearfix">
-                        <figure class="sticky-logo pull-left">
-                            <a href="index.html" aria-label="GRAIN Home">
-                                <img src="assets/images/GRAIN-logo.png" alt="GRAIN Logo" loading="lazy">
-                            </a>
-                        </figure>
-                        <div class="menu-area pull-right clearfix">
-                            <nav class="main-menu clearfix" style="padding-right:80px;"></nav>
-                        </div>
+            <!-- Contact Form -->
+            <!--<div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us more..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message →</button>
+                </form>-->
             </div>
-        </header>
-        <!-- main-header end -->
+        </div>
+    </section>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><i class="fas fa-times"></i></div>
+    <!-- Map Section -->
+    <!--<section class="map-section">
+        <div class="map-container">
+            <h2>Find Us on the Map</h2>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.123456789!2d4.7234567!3d8.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDcnMjQuNCJOIDTCsDQzJzI0LjQiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>-->
 
-            <nav class="menu-box" style="background:#2a9735;">
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <img src="assets/images/GRAIN-logo.png" alt="GRAIN Logo" title="GRAIN" loading="lazy">
-                    </a>
-                </div>
-                <div class="menu-outer">
-                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                </div>
-                <div class="contact-info">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li></li>
-                        <li><a href="tel:+234" aria-label="Call GRAIN"></a></li>
-                        <li><a href="mailto:grain.research.tech@gmail.com" aria-label="Email GRAIN">grain.research.tech@gmail.com</a></li>
-                    </ul>
-                </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About GRAIN</h3>
+                <img src="assets/images/GRAIN-logo.png" alt="GRAIN" style="width: 80px; margin-bottom: 1rem;">
+                <p>The Group for Research and Innovation Networking is a student-led initiative committed to equipping peers with practical engineering and technological innovation skills.</p>
                 <div class="social-links">
-                    <ul class="clearfix">
-                        <li>
-                            <a href="https://www.facebook.com/share/1A7sbsiW6S" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                                <span class="fab fa-facebook"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/g.r.a.i.n_research?utm_source=qr&igsh=MXZyN3I3aG0yMnMycA==" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                                <span class="fab fa-instagram"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://x.com/GRAIN_research?t=JML8oeQqySIUGWpyTVswew&s=08" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)">
-                                <span class="fab fa-x-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- End Mobile Menu -->
-
-        <!-- Contact section -->
-        <section class="about-style-nine">
-            <div class="auto-container">
-                <div class="row align-items-center clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_20">
-                            <div class="content-box">
-                                <div class="sec-title style-two">
-                                    <h2>CONTACT</h2>
-                                    <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
-                                </div>
-                                
-                                <div class="text">
-                                    <div class="contact-info-item">
-                                        <h5><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: #2a9735;"></i>Visit Us at</h5>
-                                        <p>Summit University, Irra Road, Offa, Kwara State, Nigeria</p>
-                                    </div>
-
-                                    <div class="contact-info-item">
-                                        <h5><i class="fas fa-envelope" style="margin-right: 10px; color: #2a9735;"></i>Email Us at</h5>
-                                        <p>
-                                            <a href="mailto:grain.research.tech@gmail.com">grain.research.tech@gmail.com</a>
-                                        </p>
-                                    </div>
-
-                                    <div class="contact-info-item">
-                                        <h5><i class="fas fa-share-alt" style="margin-right: 10px; color: #2a9735;"></i>Follow Us</h5>
-                                        <div class="social-links" style="margin-top:10px; font-size:24px;">
-                                            <a href="https://www.facebook.com/share/1A7sbsiW6S" target="_blank" rel="noopener noreferrer" style="color:#3b5998;" aria-label="Follow us on Facebook">
-                                                <i class="fab fa-facebook"></i>
-                                            </a>
-                                            <a href="https://www.instagram.com/g.r.a.i.n_research" target="_blank" rel="noopener noreferrer" style="color:#e4405f;" aria-label="Follow us on Instagram">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                            <a href="https://x.com/GRAIN_research" target="_blank" rel="noopener noreferrer" style="color:#000;" aria-label="Follow us on X (Twitter)">
-                                                <i class="fab fa-x-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="https://twitter.com/GRAIN_research" target="_blank"></a>
+                    <a href="https://www.facebook.com/share/1A7sbsiW6S" target="_blank"></a>
+                    <a href="https://www.instagram.com/g.r.a.i.n_research" target="_blank"></a>
                 </div>
             </div>
-        </section>
-        <!-- Contact section end -->
-
-        <!-- main-footer -->
-        <footer class="main-footer footer-style-two"></footer>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="news.html">Events</a>
+                <a href="contact_grain.html">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Summit University, Offa<br>Kwara State, Nigeria</p>
+                <p>Email: grain.research.tech@gmail.com</p>
+            </div>
+        </div>
         <div class="footer-bottom">
-            <!-- scroll to top -->
-            <button class="scroll-top style-one scroll-to-target" data-target="html" aria-label="Scroll to top">
-                <i class="fas fa-angle-up"></i>
-            </button>
-            <div class="auto-container">
-                <div class="bottom-inner clearfix">
-                    <div class="copyright pull-left">
-                        <p>Copyright &copy; <a href="index.html">GRAIN</a>, All Rights Reserved.</p>
-                    </div>
-                    <ul class="footer-nav pull-right clearfix">
-                        <li><a href="index.html">Privacy Policy</a></li>
-                        <li><a href="index.html">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
+            <p>&copy; 2025 GRAIN. All Rights Reserved.</p>
         </div>
-        <!-- main-footer end -->
-    </div>
+    </footer>
 
-    <!-- JavaScript Libraries -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/validation.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
-    <script src="assets/js/appear.js"></script>
-    <script src="assets/js/scrollbar.js"></script>
-    <script src="assets/js/tilt.jquery.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/bxslider.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
